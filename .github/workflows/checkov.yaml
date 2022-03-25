@@ -11,6 +11,7 @@ jobs:
         name: Checkout repo
         with:
           fetch-depth: 0
+          soft_fail: true
       - name: Run yor action
         uses: bridgecrewio/yor-action@main
       - name: Set up Python ${{ matrix.python-version }}
